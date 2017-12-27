@@ -43,7 +43,7 @@ Login To Binary Bot
     Submit Credentials
     ${GRANT} =          run keyword and return status  page should not contain   Review Permissions
     run keyword if   ${GRANT}!=1    Grant Permission
-    Sleep  10
+    wait until element is visible   css=div.account-id
     Click Element   css=div.account-id
     Click Element   css=div>a>li
     Sleep   10
