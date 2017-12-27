@@ -9,8 +9,8 @@ cache:
   - $HOME/.m2
       
 script:
- - 'if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then  robot testcases/*.robot; fi'
- - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then robot -e BrowserStack  testcases/*.robot; fi'
+ - 'if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then  robot testcases/binary_bot2_updated.robot; fi'
+ - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then robot -e BrowserStack  testcases/binary_bot2_updated.robot; fi'
 
 
 
