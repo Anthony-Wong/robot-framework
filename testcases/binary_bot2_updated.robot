@@ -17,6 +17,7 @@ Test Tools
     Login To Binary Bot
     Choose File  xpath=//form[@id="fileUploadForm"]/input    ${TEST FILE URL 1}
     Sleep   10
+    Click Element   xpath=//a[@class="button-secondary"]/span
     Click Element   xpath=//button[@id="runButton"]
     ${message} =    Handle Alert   timeout=30 s
     Should Be Equal     ${message}      ${TEST 1 ALERT}
