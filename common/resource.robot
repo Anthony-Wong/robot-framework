@@ -5,11 +5,11 @@ Documentation     A resource file with reusable keywords and variables.
 ...               domain specific language. They utilize keywords provided
 ...               by the imported Selenium2Library.
 Library		      String
-Library           Selenium2Library 
+Library           Selenium2Library
 
 *** Variables ***
 #THESE ARE BROWSER VARIBALES
-${BROWSER}        Chrome 
+${BROWSER}        Chrome
 ${DELAY}          0
 ${VALID USER}     munsei+cr@binary.com
 ${VALID PASSWORD}  Password1!
@@ -23,6 +23,7 @@ ${VALID JP USER}     ridho+jp@binary.com
 ${VALID JP PASSWORD}  Abcd1234
 ${HOME URL}      https://staging.binary.com/en/home.html
 ${HOME URL JP}   https://staging.binary.com/ja/home-jp.html
+${BINARY BOT URL}   https://bot.binary.com/bot.html
 ${ENDPOINT URL}  https://staging.binary.com/en/endpoint.html
 @{chrome_arguments}	--disable-infobars    --headless    --disable-gpu
 
